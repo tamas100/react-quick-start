@@ -10,6 +10,7 @@ export default function App() {
       <header className="App-header">
         <h1>React Quick Start</h1>
         <MyButton />
+        <MyButton />
         <TextPractice />
         <CarProfile />
         <CarConditional myCar='Honda' />
