@@ -1,6 +1,8 @@
 import React from 'react';
 import './CarProfile.css';
+import FormatDate from '../FormatDate/FormatDate';
 
+// const today = new Date();
 const car = [{
     manufacturer: 'Honda',
     type: 'Civic',
@@ -25,10 +27,12 @@ const car = [{
   
 ];
 
+
+
 export default function CarProfile() {
     const listItems = car.map(car =>
         <li key={car.regNumber}>
-            {car.manufacturer} - {car.fuel} <img className='car-list-img' src={car.picture} alt={car.manufacturer} />
+            {car.manufacturer} - {car.fuel} - <img className='car-list-img' src={car.picture} alt={car.manufacturer} />
         </li>
         );
     return (
@@ -38,8 +42,10 @@ export default function CarProfile() {
             <p>
                 {car[0].fuel}
             </p>
+            <FormatDate/>
             <img className='car-img' src={car[0].picture} alt="Honda Civic 2023" />
             <ul>{listItems}</ul>
+            
         </>
     );
 }
