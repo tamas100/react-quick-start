@@ -6,7 +6,11 @@ export default function CarConditional({myCar}) {
   return (
     <>
       {
-        myCar === 'Honda' ? <CarProfile/> : 'Kia? Bad decision!'
+        myCar === 'Honda' ? <CarProfile/> :
+         <p style={
+          {color: 'lightgreen', fontWeight: 'bold'}
+        }
+        >Kia? Bad decision!</p>
       }
     </>
   );
