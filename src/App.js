@@ -6,6 +6,7 @@ import TextPractice from './Components/TextPractice/TextPractice';
 import CarProfile from './Components/CarProfile/CarProfile';
 import CarConditional from './Components/CarConditional/CarConditional';
 import FormatDate from './Components/FormatDate/FormatDate';
+import Border from './Components/Border/Border';
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -26,7 +27,9 @@ export default function App() {
         <SyncButtons count={count} onClick={handleClick} />
         <SyncButtons count={count} onClick={handleClick} />
         <TextPractice />
-        <CarProfile />
+        <Border>
+          <CarProfile />
+        </Border>
         <CarConditional myCar='Honda' />
         <CarConditional myCar='Kia' />
       </header>

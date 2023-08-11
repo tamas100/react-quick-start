@@ -2,7 +2,6 @@ import React from 'react';
 import './CarProfile.css';
 import FormatDate from '../FormatDate/FormatDate';
 
-
 const car = [{
     manufacturer: 'Honda',
     type: 'Civic',
@@ -44,8 +43,7 @@ export default function CarProfile() {
             </p>
             <FormatDate/>
             <img className='car-img' src={car[0].picture} alt="Honda Civic 2023" />
-            <ul>{listItems}</ul>
-            
+            <ul>{listItems}</ul>           
         </>
     );
 }
