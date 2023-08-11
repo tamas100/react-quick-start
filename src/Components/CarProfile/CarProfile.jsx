@@ -27,12 +27,12 @@ const car = [{
   
 ];
 
-
-
 export default function CarProfile() {
     const listItems = car.map(car =>
         <li key={car.regNumber}>
-            {car.manufacturer} - {car.fuel} - <img className='car-list-img' src={car.picture} alt={car.manufacturer} />
+            {car.manufacturer+' '+car.type} - {car.fuel} - <img className='car-list-img' 
+            src={car.picture} 
+            alt={car.manufacturer+' '+car.type} />
         </li>
         );
     return (
