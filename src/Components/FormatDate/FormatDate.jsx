@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function FormatDate() {
+export default function FormatDate({lengthEra = 'long'}) {
   const today = new Date();
   const formattedDate = new Intl.DateTimeFormat(
     ['hu', 'en-US'],
-    { era: 'long', timeZoneName: 'long' }
+    { era: lengthEra, timeZoneName: 'long' }
   ).format(today);
   return (
     <>

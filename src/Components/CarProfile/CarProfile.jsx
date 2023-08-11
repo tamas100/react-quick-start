@@ -2,7 +2,7 @@ import React from 'react';
 import './CarProfile.css';
 import FormatDate from '../FormatDate/FormatDate';
 
-// const today = new Date();
+
 const car = [{
     manufacturer: 'Honda',
     type: 'Civic',

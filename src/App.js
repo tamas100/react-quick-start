@@ -5,6 +5,7 @@ import SyncButtons from './Components/SyncButtons/SyncButtons';
 import TextPractice from './Components/TextPractice/TextPractice';
 import CarProfile from './Components/CarProfile/CarProfile';
 import CarConditional from './Components/CarConditional/CarConditional';
+import FormatDate from './Components/FormatDate/FormatDate';
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <h1>React Quick Start</h1>
+        <FormatDate lengthEra='short' />
         <h2>Separated Buttons</h2>
         <MyButton />
         <MyButton />
