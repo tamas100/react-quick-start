@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 export default function MyButton() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);  
 
   function handleClick() {
     alert('You clicked me!')
@@ -10,9 +10,14 @@ export default function MyButton() {
   }
 
   return (
-    <button onClick={handleClick}>
-      Click!
-      Clicked {count} times
-    </button>
+    <>
+      <button onClick={handleClick}>
+        Click!
+        Clicked {count} times
+      </button>
+      <p>
+        {count % 2 === 0 & count > 0 ? 'Even number' : 'Odd number' }
+      </p>
+    </>
   );
 }
