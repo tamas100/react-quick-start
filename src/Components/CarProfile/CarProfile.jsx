@@ -1,6 +1,7 @@
 import React from 'react';
 import './CarProfile.css';
 import FormatDate from '../FormatDate/FormatDate';
+import CarList from '../CarList/CarList';
 
 const car = [{
     manufacturer: 'Honda',
@@ -36,6 +37,7 @@ export default function CarProfile() {
         );
     return (
         <>
+            <CarList data={car}/>
             <h2>{car[0].manufacturer}</h2>
             <h3>{car[0].type}</h3>
             <p>
