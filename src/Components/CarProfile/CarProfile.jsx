@@ -37,7 +37,6 @@ export default function CarProfile() {
         );
     return (
         <>
-            <CarList data={car}/>
             <h2>{car[0].manufacturer}</h2>
             <h3>{car[0].type}</h3>
             <p>
@@ -45,7 +44,8 @@ export default function CarProfile() {
             </p>
             <FormatDate/>
             <img className='car-img' src={car[0].picture} alt="Honda Civic 2023" />
-            <ul>{listItems}</ul>           
+            <ol>{listItems}</ol>           
+            <CarList data={car}/>
         </>
     );
 }
